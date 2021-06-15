@@ -1,0 +1,92 @@
+// Навигация хедера
+
+// .main-nav,
+// .nav,
+// .nav__list,
+// .nav-information {
+//   display: flex;
+//   align-items: center;
+// }
+// .main-nav {
+//   align-items: center;
+//   padding: 0;
+// }
+// .nav__list {
+//   margin-left: 93px;
+// }
+
+// .nav__item:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+// .nav__link {
+//   position: relative;
+//   display: block;
+
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.1;
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
+//   color: $secondary-text-color;
+//   transition: color $time $cubic;
+// }
+
+// .nav__item--current::after {
+//   content: "";
+//   position: absolute;
+//   width: 100%;
+//   height: 4px;
+//   left: 0;
+//   bottom: 0;
+//   background-color: $accent-color;
+//   opacity: 1;
+//   transition: opacity $time $cubic;
+// }
+// .nav__item--current {
+//   color: $accent-color;
+// }
+
+// .nav__item:hover .nav__link,
+// .nav__item:focus .nav__link {
+//   color: $accent-color;
+// }
+
+// .nav-information {
+//   margin-left: auto;
+
+//   &__icon {
+//       fill: currentColor;
+//   margin-right: 10px;
+//   }
+
+// }
+// .nav-information__link {
+//   color: inherit;
+
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+
+//   font-weight: 500;
+//   line-height: 1.1;
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
+// }
+
+// .nav-information__list {
+//   display: inline-flex;
+//   align-items: center;
+//   color: $primery-text-color;
+//   transition: color $time $cubic;
+
+//   &:hover,
+//   &focus{
+//     color: $accent-color;
+//   }
+//   &:last-child {
+//   margin-left: 50px;
+// }
+// }
