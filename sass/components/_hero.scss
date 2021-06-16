@@ -17,29 +17,33 @@
   background-position: center;
   background-size: cover;
 
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 94px;
-  }
+  // @media screen and (max-width: 1199px) {
+  //   margin-bottom: 60px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   margin-bottom: 94px;
+  // }
 }
 .hero__title {
   display: block;
-
-  // width: 696px;
   margin: 0 auto;
-
-  padding-top: 200px;
+  padding-top: 118px;
   margin-bottom: 30px;
   text-transform: uppercase;
   text-align: center;
+  width: 360px;
   font-weight: 900;
-  font-size: 3.143em;
-  line-height: 1.4;
+  font-size: 1.857em;
   letter-spacing: 0.06em;
-
+  line-height: 1.61;
   color: $wite-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    padding-top: 200px;
+    font-size: 3.143em;
+    line-height: 1.4;
+  }
 }
 
 .hero__button {

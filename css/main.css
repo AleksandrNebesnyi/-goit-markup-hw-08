@@ -336,6 +336,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -375,11 +379,82 @@ img {
   text-decoration: none;
 }
 
+@media screen and (max-width: 767px) {
+  .header__logo {
+    padding: 16px 0;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
 .logo__part--first {
   color: #2196f3;
 }
 
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  background-color: palegoldenrod;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
 .header {
+  position: relative;
   border-bottom: 1px solid var(--header-border-color);
 }
 
@@ -396,30 +471,28 @@ img {
   background-size: cover;
 }
 
-@media screen and (max-width: 1199px) {
-  .hero {
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    margin-bottom: 94px;
-  }
-}
-
 .hero__title {
   display: block;
   margin: 0 auto;
-  padding-top: 200px;
+  padding-top: 118px;
   margin-bottom: 30px;
   text-transform: uppercase;
   text-align: center;
+  width: 360px;
   font-weight: 900;
-  font-size: 3.143em;
-  line-height: 1.4;
+  font-size: 1.857em;
   letter-spacing: 0.06em;
+  line-height: 1.61;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    padding-top: 200px;
+    font-size: 3.143em;
+    line-height: 1.4;
+  }
 }
 
 .hero__button {

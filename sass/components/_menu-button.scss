@@ -1,5 +1,5 @@
-.mobile-menu-button {
-  display: inline-block;
+.menu-button {
+  display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
@@ -9,13 +9,13 @@
     display: none;
   }
 }
-.mobile-menu-button .mobile-menu-button__icon-cross {
+.menu-button .icon-cross {
   display: none;
 }
-.mobile-menu-button.is-open .mobile-menu-button__icon-cross {
+.menu-button.is-open .icon-cross {
   display: block;
 }
-.mobile-menu-button.is-open .mobile-menu-button__icon-menu {
+.menu-button.is-open .icon-menu {
   display: none;
 }
 

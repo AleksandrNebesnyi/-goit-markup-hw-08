@@ -1,9 +1,13 @@
-
 // Логотип хедера
 
-.header__logo{
+.header__logo {
   @extend %logo;
-  // padding: 23px 0;
+
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 
 .logo__part--first {

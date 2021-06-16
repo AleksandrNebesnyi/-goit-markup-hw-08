@@ -336,6 +336,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -373,6 +377,14 @@ img {
 
 .link {
   text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header__logo {
+    padding: 16px 0;
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 
 .logo__part--first {
