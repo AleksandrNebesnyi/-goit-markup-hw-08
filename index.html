@@ -48,7 +48,17 @@
                     
                 </li>
             </ul>
-    
+                <button  type="button" class="mobile-menu-button is-open" 
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button
+                >
+                    <svg  width="20" height="20" aria-label="кнопка мобильного меню">
+                        <use class="mobile-menu-button__icon-cross" href="./images/sprite.svg#icon-antenna"></use>
+                        <use class="mobile-menu-button__icon-menu" href="./images/sprite.svg#icon-clock"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" id="menu-container" data-menu></div>
         </div>
     </header>
     
@@ -513,8 +523,9 @@
 
     <!-- Скрипт для открытия, закрытия модального окна  -->
 
-    <script src="./modal.js"> </script>
-        
+   
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
    
     </body>
     

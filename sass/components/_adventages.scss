@@ -1,17 +1,24 @@
 // Преимущества
 
-// .advantages {
-//   padding-bottom: 0px;
-// }
+.advantages {
+  margin-bottom: 60px;
+  // padding-bottom: 0px;
+}
 
 .advantages__title {
   @extend %visually_hidden;
 }
 
 .advantages-list {
-  // display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
   &__title {
+    display: block;
+    text-align: center;
     text-transform: uppercase;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -33,14 +40,56 @@
 
 .advantages-list__svg {
   width: 100%;
-  // padding: 20px 0;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  text-align: center;
   // margin-bottom: 30px;
   background-color: $advantages-icon-color;
 }
 
-// .advantages-list__item {
-//   max-width: 270px;
-//   &:not(:last-child) {
-//     margin-right: 30px;
+.advantages-list__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1140px) {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+  // max-width: 270px;
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+}
+
+//  @media screen and (min-width: 768px) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: -5px;
+//   }
+
+//   @media screen and (min-width: 1140px) {
+//     margin: -10px;
 //   }
 // }
+
+// .features-item {
+//   text-align: center;
+//   padding-top: 20px;
+//   padding-bottom: 20px;
+//   color: #fff;
+//   font-size: 32px;
+
+//   @media screen and (min-width: 768px) {
+//     width: calc((100% - 4 * 5px) / 2);
+//     margin: 5px;
+//   }
+
+//   @media screen and (min-width: 1140px) {
+//     width: calc((100% - 6 * 10px) / 3);
+//     margin: 10px;
+//   }
