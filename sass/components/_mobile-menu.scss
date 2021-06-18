@@ -19,6 +19,9 @@
     opacity: 1;
     display: block;
     overflow-y: scroll;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -92,16 +95,17 @@
   }
 }
 
-.menu-btn__icon:hover,
-.menu-btn__icon:focus {
-  fill: $accent-color;
-}
-
 .is-open .menu-btn__icon {
   z-index: 11;
   position: fixed;
   right: 15px;
   top: 10px;
+  fill: black;
+}
+
+.menu-btn__icon:hover,
+.menu-btn__icon:focus {
+  fill: $accent-color;
 }
 
 .is-open .menu-btn__icon-open {
