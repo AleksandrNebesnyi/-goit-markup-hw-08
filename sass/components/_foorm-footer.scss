@@ -1,20 +1,26 @@
 // Форма футера
 
-// .form-footer__container {
-//   display: flex;
+.form-footer {
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+  &__container {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
 
-// }
 .form-footer__title {
   margin: 0;
   margin-bottom: 20px;
-  text-align: center;
   text-transform: uppercase;
   line-height: 1.14;
   color: $wite-color;
 }
 
 .form-footer__input {
-  // margin-right: 12px;
   padding: 15px 0 15px 16px;
   margin-bottom: 20px;
   width: 100%;
@@ -29,6 +35,15 @@
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+    margin-bottom: 0;
   }
 }
 .footer-form__button {

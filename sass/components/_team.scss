@@ -2,9 +2,12 @@
 
 .team {
   background-color: $primery-bg-color;
-  margin-bottom: 60px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   &__title {
     margin: 0;
@@ -16,10 +19,10 @@
     color: $secondary-text-color;
 
     @media screen and (min-width: 1200px) {
+      font-size: 2.571em;
+      line-height: 1.2;
+      margin-bottom: 50px;
     }
-    font-size: 2.571em;
-    line-height: 1.2;
-    margin-bottom: 50px;
   }
 }
 

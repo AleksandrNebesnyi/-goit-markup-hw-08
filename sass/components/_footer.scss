@@ -2,39 +2,59 @@
 
 .footer {
   background-color: $footer-bg;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  // &__container {
-  //   display: flex;
-  //   align-items: baseline;
-  //   padding: 0;
-  // }
-  // }
-  // .footer__container {
-  //   margin: 0 auto;
-  //   padding: 0 15px;
-  // }
+  @media screen and (max-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
-.footer__adress {
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .footer__container-tablet {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+}
+.footer__container-desktop {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
-  margin-bottom: 60px;
-  // padding-bottom: 60px;
-  // margin-right: 70px;
+.footer__adress {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 61px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 0px;
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
   @extend %logo;
+  display: block;
   margin-bottom: 20px;
-
-  padding-top: 60px;
-  text-align: center;
 
   &--part-first {
     color: $accent-color;
   }
   &--part-two {
     color: $wite-color;
+  }
+  @media screen and (max-width: 767px) {
+    text-align: center;
   }
 }
 
@@ -49,11 +69,6 @@
   color: inherit;
 }
 
-// .footer-list {
-//   display: block;
-//   margin: 0 auto;
-
-// }
 .footer-list__address {
   margin-bottom: 8px;
 
@@ -84,10 +99,17 @@
 }
 
 .footer-link {
-  margin-bottom: 60px;
-  // padding-top: 72px;
-  // padding-bottom: 100px;
-  // margin-right: 93px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    padding-right: 74px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 0;
+    margin-right: 90px;
+  }
 }
 
 .footer-link__list {

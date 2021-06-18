@@ -1,7 +1,9 @@
 // Постоянные клиенты
 
 .regular-client {
-  margin-bottom: 60px;
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 60px;
+  }
 }
 .regular-client__title {
   margin: 0px;
