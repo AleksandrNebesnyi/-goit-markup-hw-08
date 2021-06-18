@@ -30,27 +30,29 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin-left: calc(#{$neg} * #{$card-set-gap});
+    margin-top: calc(#{$neg} * #{$card-set-gap});
   }
 }
 
 .team-list__item {
+  flex-basis: calc(100% / 1 - #{$card-set-gap});
+  margin-left: $card-set-gap;
+  margin-top: $card-set-gap;
   background-color: $wite-color;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
     0 1px 3px rgba(0, 0, 0, 0.12);
-  margin: 15px;
-  @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 4 * 15px) / 2);
+    flex-basis: calc(100% / 2 - #{$card-set-gap});
+    margin-left: $card-set-gap;
+    margin-top: $card-set-gap;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 8 * 15px) / 4);
+    flex-basis: calc(100% / 4 - #{$card-set-gap});
+    margin-left: $card-set-gap;
+    margin-top: $card-set-gap;
   }
 }
 .team-list__foto {
@@ -81,8 +83,6 @@
 
 .team-list__icon-block {
   @include centeredFlex;
-
-  // margin-bottom: 30px;
 }
 
 .team-list__icon {

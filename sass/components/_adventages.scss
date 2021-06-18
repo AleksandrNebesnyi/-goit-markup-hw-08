@@ -16,7 +16,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin-left: calc(#{$neg} * #{$card-set-gap});
+    margin-top: calc(#{$neg} * #{$card-set-gap});
   }
 
   &__title {
@@ -34,11 +35,6 @@
     display: block;
     line-height: 1.71;
   }
-
-  // &__icon {
-  //   display: block;
-  //   margin: 0 auto;
-  // }
 }
 
 .advantages-list__svg {
@@ -53,20 +49,18 @@
 }
 
 .advantages-list__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  flex-basis: calc(100% / 1 - #{$card-set-gap});
+  margin-left: $card-set-gap;
+  margin-top: $card-set-gap;
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
+    flex-basis: calc(100% / 2 - #{$card-set-gap});
+    margin-left: $card-set-gap;
+    margin-top: $card-set-gap;
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 8 * 15px) / 4);
-    margin: 15px;
+    flex-basis: calc(100% / 4 - #{$card-set-gap});
+    margin-left: $card-set-gap;
+    margin-top: $card-set-gap;
   }
-  // max-width: 270px;
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
 }
