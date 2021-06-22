@@ -2,23 +2,23 @@
 
 .footer {
   background-color: $footer-bg;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $desktop) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .footer__container-tablet {
     display: flex;
     align-items: baseline;
     margin-bottom: 60px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 0;
     }
   }
 }
 .footer__container-desktop {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     align-items: baseline;
     padding: 60px 15px;
@@ -34,10 +34,10 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-left: 61px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-left: 0px;
     margin-right: 70px;
   }
@@ -103,11 +103,11 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-left: auto;
     padding-right: 74px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-right: 0;
     margin-right: 90px;
   }

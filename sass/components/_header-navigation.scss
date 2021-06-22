@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 0 15px;
   }
 }
@@ -18,23 +18,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 65px;
   }
 }
 
 .nav__list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     margin-left: 88px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-left: 93px;
   }
 }
 
 .nav__item:not(:last-child) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 50px;
   }
 }
@@ -44,13 +44,13 @@
     margin-right: 10px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;
     margin-left: auto;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-direction: row;
   }
 }
@@ -69,10 +69,10 @@
 }
 
 .contacts-nav__item:not(:last-child) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 10px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 30px;
     margin-bottom: 0px;
   }
@@ -121,7 +121,7 @@
   text-decoration: none;
 
   color: inherit;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 25px 0;
   }
 }

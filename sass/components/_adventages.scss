@@ -2,7 +2,7 @@
 
 .advantages {
   margin-bottom: 60px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -13,7 +13,7 @@
 }
 
 .advantages-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(#{$neg} * #{$card-set-gap});
@@ -43,7 +43,7 @@
   text-align: center;
 
   background-color: $advantages-icon-color;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 30px;
   }
 }
@@ -53,12 +53,12 @@
   margin-left: $card-set-gap;
   margin-top: $card-set-gap;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     flex-basis: calc(100% / 2 - #{$card-set-gap});
     margin-left: $card-set-gap;
     margin-top: $card-set-gap;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-basis: calc(100% / 4 - #{$card-set-gap});
     margin-left: $card-set-gap;
     margin-top: $card-set-gap;

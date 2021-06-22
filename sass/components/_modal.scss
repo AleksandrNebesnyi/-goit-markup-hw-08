@@ -14,7 +14,7 @@
 
   padding: 93px 15px;
   overflow-y: scroll;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding: 0;
   }
 }
@@ -41,7 +41,7 @@
   min-width: 90vw;
   min-height: 80vh;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,16 +50,15 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform $time $cubic;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     min-height: 581px;
     min-width: 528px;
   }
 }
 .modal__button {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex;
+
   top: 0px;
   right: 0px;
 

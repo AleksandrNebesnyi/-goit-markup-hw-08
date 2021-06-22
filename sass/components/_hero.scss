@@ -1,8 +1,6 @@
 // Герой
 
 .hero {
-  max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: $hero-bg-color;
@@ -17,6 +15,8 @@
   background-size: cover;
 
   @media screen and (max-width: 767px) {
+    max-width: $mobile;
+    min-height: 400px;
     background-image: url("../images/hero/hero-mobile.jpg");
 
     @media (min-device-pixel-ratio: 2),
@@ -29,7 +29,9 @@
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    min-height: 400px;
     background-image: url("../images/hero/hero-tablet.jpg");
 
     @media (min-device-pixel-ratio: 2),
@@ -39,7 +41,10 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    min-height: 600px;
+
     background-image: url("../images/hero/hero.jpg");
 
     @media (min-device-pixel-ratio: 2),
@@ -64,7 +69,7 @@
   line-height: 1.61;
   color: $wite-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 696px;
     padding-top: 200px;
     font-size: 3.143em;
