@@ -23,7 +23,7 @@
                 <span class="logo__part--first">Web</span>Studio</a>
             <ul class="nav__list list">
                 <li class="nav__item "><a href="./index.html" class="nav__link ">Студия</a></li>
-                <li class="nav__item"><a href="./portfolio.html" class="nav__link nav__item--current ">Портфолио</a></li>
+                <li class="nav__item"><a href="./portfolio.html" class="nav__link nav__item--current">Портфолио</a></li>
                 <li class="nav__item"><a href="#footer" class="nav__link">Контакты</a></li>
             </ul>
 
@@ -50,8 +50,8 @@
         </ul>
         <button class="mobile-menu__btn" aria-expanded="false" aria-controls="menu-container" data-menu-button>
             <svg class="menu-btn__icon" width="40px" height="40px" aria-label="кнопка мобильного меню">
-                <use class="menu-btn__icon-open" href="./images/sprite.svg#icon-antenna"></use>
-                <use class="menu-btn__icon-close" href="./images/sprite.svg#icon-clock"></use>
+                <use class="menu-btn__icon-open" href="./images/sprite.svg#menu40"></use>
+                <use class="menu-btn__icon-close" href="./images/sprite.svg#close40"></use>
             </svg>
         </button>
 
@@ -63,9 +63,9 @@
             <li class="mobile-menu__item"><a class="link mobile-menu__link mobile-menu__link--current"
                     href="./index.html">Студия</a></li>
             <li class="mobile-menu__item"><a class="link mobile-menu__link" href="./portfolio.html">Портфолио</a></li>
-            <li class="mobile-menu__item"><a class="link mobile-menu__link" href="#footer">Контакты</a></li>
+            <li class="mobile-menu__item"><a class="link mobile-menu__link" href="#mobile-menu__contact">Контакты</a></li>
         </ul>
-        <ul class="mobile-menu__contact list">
+        <ul  id="mobile-menu__contact" class="mobile-menu__contact list">
             <li class="mobile-menu__phone"><a class="link mobile-menu__phone--link" href="tel:+380961111111">
                     +38 096 111 11 11</a></li>
             <li class="mobile-menu__email"><a class="link mobile-menu__email--link" href="mailto:info@devstudio.com">
@@ -569,6 +569,11 @@
     </div>
 
 </footer>
+<!-- Скрипт для открытия, закрытия  мобильного меню  -->
+
+
+
+<script src="./js/menu.js"></script>
          
 </body>
 
