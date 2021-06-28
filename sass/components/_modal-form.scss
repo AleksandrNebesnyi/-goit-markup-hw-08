@@ -1,4 +1,3 @@
-
 // Форма модального окна
 
 .form {
@@ -59,10 +58,9 @@
   outline-color: $accent-color;
 }
 
-
 .form__field:focus-within .form__icon {
-    fill:$accent-color;
-   }
+  fill: $accent-color;
+}
 
 .form__field:focus-within .textarea {
   outline-width: 1px;
@@ -98,21 +96,22 @@
 }
 .policy {
   @include centeredFlex;
+
   margin-bottom: 30px;
   cursor: pointer;
 
   &__link {
-  color: $accent-color;
+    color: $accent-color;
   }
   &__text {
-  letter-spacing: 0.01em;
-  line-height: 1.71;
-  color: $primery-text-color;
-}
-&__checkbox {
-  @extend %visually_hidden;
-}
+    letter-spacing: 0.01em;
+    line-height: 1.71;
+    color: $primery-text-color;
   }
+  &__checkbox {
+    @extend %visually_hidden;
+  }
+}
 
 .policy__icon {
   display: block;
