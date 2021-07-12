@@ -41,13 +41,11 @@
 
   @media screen and (min-width: $tablet) {
     flex-basis: calc(100% / 3 - #{$card-set-gap});
-    margin-left: $card-set-gap;
-    margin-top: $card-set-gap;
+    // margin-left: $card-set-gap;
+    // margin-top: $card-set-gap;
   }
   @media screen and (min-width: $desktop) {
     flex-basis: calc(100% / 6 - #{$card-set-gap});
-    margin-left: $card-set-gap;
-    margin-top: $card-set-gap;
   }
 }
 
